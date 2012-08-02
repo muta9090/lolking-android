@@ -110,15 +110,10 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
     }
     
     @Override
-    public void onBackPressed() {
-    	//TODO: Make the highlighted tab the currently selected one
-    }   
-
-    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.activity_main, menu);        
         SearchView searchView = (SearchView) menu.findItem(R.id.menu_search).getActionView();
-        //TODO:Eventually implement a search function that will autodetect whether the search term is a summoner/champion/item/etc.
+        //TODO:Eventually implement a search function that will autodetect whether the search term is a summoner/champion/item/etc, and go to the appropriate place
         return true;
     }
 }

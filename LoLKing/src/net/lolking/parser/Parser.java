@@ -9,7 +9,7 @@ public abstract class Parser {
 	public Parser() {
 		
 	}
-	abstract Boolean worked();
 	
-
+	abstract Boolean worked();
+	abstract void parseData();
 }
